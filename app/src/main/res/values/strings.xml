@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Clock</string>
+    <string name="text_zero">00</string>
+    <string name="text_hour">HH</string>
+    <string name="text_minute">MM</string>
+    <string name="text_second">SS</string>
+    <string name="text_button1">Start</string>
+    <string name="text_button2">Stop</string>
+    <string name="text_button3">Reset</string>
+    <string name="text_semicolon">&#58;</string>
+    <string name="text_alarm1">Alarm Off</string>
+    <string name="text_alarm2">Alarm On</string>
+    <string name="text_update">Did you set the alarm?</string>
+    <string name="text_location">Latitude and Longitude</string>
+</resources>

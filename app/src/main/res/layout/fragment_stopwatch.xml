@@ -1,0 +1,144 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context="com.elano.clock.controller.StopwatchFragment">
+
+    <TextView
+        android:id="@+id/tvHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/text_hour"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHours"
+        app:layout_constraintStart_toStartOf="@+id/tvHours"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/text_zero"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvColon1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHour"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tvColon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/text_semicolon"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvMinutes"
+        app:layout_constraintStart_toEndOf="@+id/tvHours"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/text_minute"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMinutes"
+        app:layout_constraintStart_toStartOf="@+id/tvMinutes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/text_zero"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvColon2"
+        app:layout_constraintStart_toEndOf="@+id/tvColon1"
+        app:layout_constraintTop_toBottomOf="@+id/tvMinute" />
+
+    <TextView
+        android:id="@+id/tvColon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/text_semicolon"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvSeconds"
+        app:layout_constraintStart_toEndOf="@+id/tvMinutes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/text_second"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSeconds"
+        app:layout_constraintStart_toStartOf="@+id/tvSeconds"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/text_zero"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvColon2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecond" />
+
+    <ToggleButton
+        android:id="@+id/btnStartStop"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textOff="@string/text_button1"
+        android:textOn="@string/text_button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:enabled="true"
+        android:text="@string/text_button3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
