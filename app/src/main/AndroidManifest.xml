@@ -19,6 +19,8 @@
 
         <receiver android:name=".controller.AlarmClockReceiver"/>
 
+        <service android:name=".controller.RingtoneService" android:enabled="true"/>
+
     </application>
 
 </manifest>
